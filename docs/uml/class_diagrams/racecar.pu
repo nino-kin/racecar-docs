@@ -1,0 +1,84 @@
+@startuml togikai
+
+' Class
+' == ultrasonic.py
+class Ultrasonic {
+    +measure()
+}
+
+' == camera_multiprocess.py
+class VideoCaptureWrapper {
+    +read()
+    +release()
+    +save()
+}
+
+' == fpv.py
+class VideoCamera {
+    +get_frame()
+    +get_frame_multi()
+}
+
+' == gyro.py
+class IMU {
+    +GCounter()
+    +GVectoring()
+}
+
+class BNO055 {
+    +begin()
+    +setMode()
+    +setExternalCrystalUse()
+    +getSystemStatus()
+    +getRevInfo()
+    +getCalibration()
+    +getTemp()
+    +getVector()
+    +getQuat()
+    +readBytes()
+    +writeBytes()
+    +measure()
+    +convert_angle_plusminus180()
+    +filter_angle()
+    +measure_set()
+}
+
+' == joystick.py
+class Joystick {
+    +poll()
+}
+
+' == motor.py
+class Motor {
+    +set_throttle_pwm_duty()
+    +set_steer_pwm_duty()
+    +limit_steer_PWM()
+    +adjust_steering()
+    +adjust_throttle()
+    +writetofile()
+    +breaking()
+}
+
+' == planner.py
+class Planner {
+    +Back()
+    +Stop()
+    +Right_Left_3()
+    +Right_Left_3_Records()
+    +RightHand()
+    +LeftHand()
+    +RightHand_PID()
+    +LeftHand_PID()
+}
+
+' == train_pytorch.py
+class CustomDataset
+class NeuralNetwork {
+    +forward()
+    +predict()
+    +predict_label()
+}
+
+IMU <|-- BNO055
+
+@enduml
