@@ -4,6 +4,8 @@
 
 ### pyenv
 
+cf. [pyenvの導入](https://zenn.dev/tsaeki/articles/bc868a8d8fd6ae)
+
 You need to install the following packages for `pyenv`.
 
 ```bash
