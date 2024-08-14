@@ -14,6 +14,27 @@
 
 This is the central docs for an awesome racecar that be able to automatically run the course. For questions and feedback, please reach out to us [here](https://github.com/nino-kin/racecar-docs/discussions).
 
+```mermaid
+gantt
+  title FY2024
+  dateFormat YYYY-MM-DD
+  axisFormat %b-%d
+  section Milestone
+      参加チーム決定 :2024-06-17, 1d
+      事前説明会 :2024-06-19, 1d
+      車両貸出 :2024-08-05, 14d
+      試走会 :2024-08-21, 2024-10-26
+  section Tournament
+      Preliminary Tournament :crit, 2024-10-05, 2024-10-13
+      Final Tournament :crit, 2024-10-27, 1d
+  section Trainings
+      ルールベース講座 :2024-07-05, 2024-07-09
+      機械学習講座 :2024-07-16, 2024-07-23
+      カメラ搭載講座 :2024-07-20, 1d
+      画像処理・ディープラーニング講座 :2024-08-24, 1d
+      Donkeycar,Jetracer講座 :2024-08-31, 1d
+```
+
 ## Prerequisites
 
 Before you set up your environment, please check the following requirements:
