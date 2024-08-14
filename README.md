@@ -7,6 +7,9 @@
 [![Watchers][watchers-shield]][watchers-url]
 [![MIT License][license-shield]][license-url]
 
+[**Autonomous Minicar Battle**](https://github.com/autonomous-minicar-battle)
+| [**Slides - Google Drive**](https://drive.google.com/drive/folders/17YLekXMTtOAwoKE8AF5WkMViXlS2xn-3)
+
 ## About the Project
 
 This is the central docs for an awesome racecar that be able to automatically run the course. For questions and feedback, please reach out to us [here](https://github.com/nino-kin/racecar-docs/discussions).
