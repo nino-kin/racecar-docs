@@ -4,6 +4,19 @@
 
 - [Autodesk Fusion 360 - GitHub](https://github.com/AutodeskFusion360)
 
+- [Raspberry pi 3Bi+](https://www.iodata.jp/product/pc/raspberrypi/ud-rp3bp/spec.htm)
+
+カメラモジュール
+
+224 x 224ピクセル
+
+Recommend Type: [カメラモジュール (OV5647)(160°)](https://electronicwork.shop/items/647531b0a18e8d0031119480)
+
+> [!TIP]
+> 旋回中心に近い位置にカメラを配置すると、画像（映像）のブレが少なくなる。
+
+## Requirements
+
 ## Process
 
 ```mermaid
@@ -27,7 +40,6 @@ flowchart LR
 3. 側面図・平面図を描く
 
 寸法入れ
-
 
 #### 立体図
 
