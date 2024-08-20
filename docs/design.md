@@ -184,10 +184,23 @@ def main():
 
 ## Class
 
+All classes:
+
+<!-- no toc -->
+- [Main controller](#main-controller)
+- [Joystick](#joystick)
+- [VehicleController](#vehiclecontroller)
+- [SensorManager](#sensormanager)
+- [PathPlanner](#pathplanner)
+- [DataLogger](#datalogger)
+- [State (Abstract class)](#state-abstract-class)
+- [StoppedState](#stoppedstate)
+- [MovingState](#movingstate)
+
 ### Main controller
 
-役割: プログラムのエントリーポイントで、すべてのコンポーネントを統括するクラス。運転モードの切り替えも担当。
-責任: 各コンポーネントの初期化、主な制御ループの管理、モードの切り替え。
+- 役割: プログラムのエントリーポイントで、すべてのコンポーネントを統括するクラス。運転モードの切り替えも担当。
+- 責任: 各コンポーネントの初期化、主な制御ループの管理、モードの切り替え。
 
 ```python
 class MainController:
@@ -234,8 +247,8 @@ controller.start()
 
 ### Joystick
 
-役割: ユーザーからの入力を受け付け、手動運転を可能にするクラス。
-責任: ジョイスティックの初期化、入力の取得、モード切替ボタンの検出。
+- 役割: ユーザーからの入力を受け付け、手動運転を可能にするクラス。
+- 責任: ジョイスティックの初期化、入力の取得、モード切替ボタンの検出。
 
 ```python
 class Joystick:
@@ -258,8 +271,8 @@ class Joystick:
 
 ### VehicleController
 
-役割: ラジコンカーの運転制御を行うクラス。手動運転と自動運転の両方に対応。
-責任: センサーデータやジョイスティック入力に基づいて車両の制御を行う。
+- 役割: ラジコンカーの運転制御を行うクラス。手動運転と自動運転の両方に対応。
+- 責任: センサーデータやジョイスティック入力に基づいて車両の制御を行う。
 
 ```python
 class VehicleController:
@@ -300,8 +313,8 @@ class VehicleController:
 
 ### SensorManager
 
-役割: センサーの管理とデータ収集を行うクラス。
-責任: 各種センサーの初期化、センサーデータの取得と提供。
+- 役割: センサーの管理とデータ収集を行うクラス。
+- 責任: 各種センサーの初期化、センサーデータの取得と提供。
 
 ```python
 class SensorManager:
@@ -323,8 +336,8 @@ class SensorManager:
 
 ### PathPlanner
 
-役割: 経路計画を行うクラス。
-責任: コースのセグメントを基に進行方向やスピードを決定。
+- 役割: 経路計画を行うクラス。
+- 責任: コースのセグメントを基に進行方向やスピードを決定。
 
 ```python
 class PathPlanner:
@@ -336,8 +349,8 @@ class PathPlanner:
 
 ### DataLogger
 
-役割: センサーデータや走行データを記録するクラス。
-責任: データの保存と管理。機械学習用データセットの作成にも利用。
+- 役割: センサーデータや走行データを記録するクラス。
+- 責任: データの保存と管理。機械学習用データセットの作成にも利用。
 
 ```python
 class DataLogger:
@@ -352,8 +365,8 @@ class DataLogger:
 
 ### State (Abstract class)
 
-役割: 車両の状態（停止、進行、回避など）を表現するクラス群の基底クラス。
-責任: 車両の異なる状態を扱うための共通インターフェースを提供。
+- 役割: 車両の状態（停止、進行、回避など）を表現するクラス群の基底クラス。
+- 責任: 車両の異なる状態を扱うための共通インターフェースを提供。
 
 ```python
 from abc import ABC, abstractmethod
@@ -367,8 +380,8 @@ class State(ABC):
 
 ### StoppedState
 
-役割: 車両が停止状態にあるときの動作を定義するクラス。
-責任: 停止状態における処理を実装。
+- 役割: 車両が停止状態にあるときの動作を定義するクラス。
+- 責任: 停止状態における処理を実装。
 
 ```python
 class StoppedState(State):
@@ -380,8 +393,8 @@ class StoppedState(State):
 
 ### MovingState
 
-役割: 車両が進行中の状態を定義するクラス。
-責任: 進行状態における処理を実装。
+- 役割: 車両が進行中の状態を定義するクラス。
+- 責任: 進行状態における処理を実装。
 
 ```python
 class MovingState(State):
