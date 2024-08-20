@@ -54,6 +54,15 @@ Check installed pyenv version.
 pyenv versions
 ```
 
+Activate your favorite version of python as follows:
+
+```bash
+# For global
+pyenv global 3.10.8
+# For local
+pyenv local 3.10.8
+```
+
 ### venv
 
 Create a virtual environment as follows:
