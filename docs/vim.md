@@ -98,6 +98,9 @@ set whichwrap=b,s,h,l,<,>,[,],~
 " バッファスクロール
 set mouse=a
 
+colorscheme koehler
+set background=dark
+
 " auto reload .vimrc
 augroup source-vimrc
   autocmd!
