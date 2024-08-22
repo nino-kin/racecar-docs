@@ -12,7 +12,8 @@
 
 ## About the Project
 
-This is the central docs for an awesome racecar that be able to automatically run the course. For questions and feedback, please reach out to us [here](https://github.com/nino-kin/racecar-docs/discussions).
+This is the central docs for an awesome racecar that be able to automatically run the course. For questions and feedback,
+ please reach out to us [here](https://github.com/nino-kin/racecar-docs/discussions).
 
 ```mermaid
 gantt
@@ -57,7 +58,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the following command to start **mkdocs** locally, you can view docs and make changes. To view the served docs, need to navigate to [http://localhost:8000](http://localhost:8000). Any local changes will be automatically reloaded.
+Run the following command to start **mkdocs** locally, you can view docs and make changes. To view the served docs,
+need to navigate to [http://localhost:8000](http://localhost:8000). Any local changes will be automatically reloaded.
 
 ```bash
 mkdocs serve
