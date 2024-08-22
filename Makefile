@@ -3,6 +3,8 @@
 
 SHELL := /bin/bash
 
+export PRE_COMMIT_HOME=.pre-commit
+
 help: ## Display this help message
 	@echo -e "\nUsage: make TARGET\n\nTargets:"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
@@ -14,3 +16,6 @@ build: ## Build documentation for MkDocs
 
 serve: ## Serve documentation for MkDocs
 	@docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+
+pre-commit: ## Run pre-commit hooks
+	@pre-commit run --all-files
